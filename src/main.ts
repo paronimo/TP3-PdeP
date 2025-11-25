@@ -1,1 +1,0 @@
-console.log("Toma, pegate un tiro");

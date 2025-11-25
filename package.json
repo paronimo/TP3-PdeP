@@ -2,7 +2,7 @@
   "name": "tp3",
   "version": "1.0.0",
   "description": "",
-  "main": "main.ts",
+  "main": "main.js",
   "scripts": {
     "build": "tsc",
     "start": "npm run build && node dist/main.js"
@@ -13,7 +13,11 @@
   "type": "commonjs",
   "devDependencies": {
     "@types/node": "^24.9.0",
+    "@types/prompt-sync": "^4.2.3",
     "ts-node": "^10.9.2",
     "typescript": "^5.9.3"
+  },
+  "dependencies": {
+    "prompt-sync": "^4.2.0"
   }
 }
