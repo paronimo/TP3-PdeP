@@ -1,6 +1,5 @@
-//-------------------------------------------
-//  CONSTRUCTOR DE TAREA (POO con prototipos)
-//-------------------------------------------
+/*  CONSTRUCTOR DE TAREA (POO con prototipos)
+--------------------------------------------------*/
 
 function Tarea(titulo, descripcion, dificultad, estado, dia, mes, anio, preguntaFecha) {
   this.titulo = titulo;
@@ -37,3 +36,21 @@ Tarea.prototype.setDia = function(n) { this.dia = n; };
 Tarea.prototype.setMes = function(n) { this.mes = n; };
 Tarea.prototype.setAnio = function(n) { this.anio = n; };
 Tarea.prototype.setPreguntaFecha = function(n) { this.preguntaFecha = n; };
+
+/* mostrar resumen
+----------------------------------------------------------------*/
+Tarea.prototype.mostrarResumen = function() {
+  console.log("\n--- RESUMEN DE LA TAREA ---");
+  console.log("Título:", this.titulo);
+  console.log("Descripción:", this.descripcion);
+  console.log("Dificultad:", this.dificultad);
+  console.log("Estado:", this.estado);
+
+  if (this.preguntaFecha === 1) {
+    console.log(`Fecha límite: ${this.dia}/${this.mes}/${this.anio}`);
+  } else {
+    console.log("Sin fecha de vencimiento");
+  }
+
+  console.log("------------------------------\n");
+};

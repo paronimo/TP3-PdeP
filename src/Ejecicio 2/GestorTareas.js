@@ -122,20 +122,3 @@ function buscarTarea() {
   prompt("ENTER para continuar...");
 }
 }
-/*  mostrar Resumen
--------------------------------------------*/
-Tarea.prototype.mostrarResumen = function() {
-  console.log("\n--- RESUMEN DE LA TAREA ---");
-  console.log("Título:", this.titulo);
-  console.log("Descripción:", this.descripcion);
-  console.log("Dificultad:", this.dificultad);
-  console.log("Estado:", this.estado);
-
-  if (this.preguntaFecha === 1) {
-    console.log(`Fecha límite: ${this.dia}/${this.mes}/${this.anio}`);
-  } else {
-    console.log("Sin fecha de vencimiento");
-  }
-
-  console.log("------------------------------\n");
-};
